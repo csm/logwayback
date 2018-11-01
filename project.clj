@@ -1,4 +1,4 @@
-(defproject com.github.csm/logwayback "0.1.0-SNAPSHOT"
+(defproject com.github.csm/logwayback "0.1.0"
   :description "Colorful, structured logback output"
   :url "https://github.com/csm/logwayback"
   :license {:name "MIT"
@@ -12,7 +12,6 @@
   :release-tasks [["vcs" "assert-committed"]
                   ["change" "version"
                    "leiningen.release/bump-version" "release"]
-                  ["codox"]
                   ["vcs" "commit"]
                   ["vcs" "tag"]
                   ["deploy" "clojars"]
