@@ -11,7 +11,7 @@ public class Layout extends LayoutBase<ILoggingEvent> {
     private static final IFn encodeFn;
 
     static {
-        Symbol reyTesting = (Symbol) var("clojure.core", "symbol").invoke("rey.testing");
+        Symbol reyTesting = (Symbol) var("clojure.core", "symbol").invoke("logwayback.core");
         var("clojure.core", "require").invoke(reyTesting);
         encodeFn = var("logwayback.core", "encode-log-event");
     }
