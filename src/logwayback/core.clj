@@ -1,7 +1,13 @@
 (ns logwayback.core
-  (:import [ch.qos.logback.classic.spi ILoggingEvent]
+  (:require [clojure.edn :as edn]
+            [clojure.string :as string]
+            [environ.core :refer [env]]
+            [puget.color :as color]
+            [puget.printer :as puget])
+  (:import [ch.qos.logback.classic.spi ILoggingEvent IThrowableProxy]
            [java.util Date]
-           [java.text SimpleDateFormat]))
+           [java.text SimpleDateFormat]
+           [ch.qos.logback.classic Level]))
 
 (def date-format (SimpleDateFormat. "yyyy-MM-dd HH:mm:ss"))
 
