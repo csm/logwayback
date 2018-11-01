@@ -1,5 +1,7 @@
 # logwayback
 
+[![Clojars Project](https://img.shields.io/clojars/v/com.github.csm/logwayback.svg)](https://clojars.org/com.github.csm/logwayback)
+
 An encoder for logback that can colorize output, and pretty
 print clojure data if that's what you're logging.
 
