@@ -1,4 +1,4 @@
-(defproject com.github.csm/logwayback "0.1.1-SNAPSHOT"
+(defproject com.github.csm/logwayback "0.1.1"
   :description "Colorful, structured logback output"
   :url "https://github.com/csm/logwayback"
   :license {:name "MIT"
